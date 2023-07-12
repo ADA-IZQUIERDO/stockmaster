@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="danger"> 
+    <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+    <ion-title>Edit profile</ion-title>
+    <div class="logo-container">
+      <ion-img src="assets/StockMasteerr.png" class="logo"></ion-img>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-row>
+      <ion-col>
+        <ion-thumbnail>
+          <img src="http://i.pravatar.cc/150" alt="username" />
+          <div class="avatarOverlay">
+            <label for="avatarFileInput">
+              <ion-icon name="camera"></ion-icon>
+            </label>
+            <input type="file" id="avatarFileInput" accept="image/*" (change)="updatePhotoURL($event)">
+          </div>
+        </ion-thumbnail>
+        <form action="">
+            <ion-item lines="full">
+              <ion-label position="floating">Name</ion-label>
+              <ion-input type="text" required></ion-input>
+            </ion-item>
+            <ion-item lines="full">
+              <ion-label position="floating">Username</ion-label>
+              <ion-input type="text" required></ion-input>
+            </ion-item>
+            <ion-item lines="full">
+              <ion-label position="floating">Email</ion-label>
+              <ion-input type="email" required></ion-input>
+            </ion-item>
+            <ion-item lines="full">
+              <ion-label position="floating">Password</ion-label>
+              <ion-input type="password" required></ion-input>
+            </ion-item>
+        </form>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block">Save</ion-button>
+      </ion-col>
+    </ion-row>
+</ion-content>

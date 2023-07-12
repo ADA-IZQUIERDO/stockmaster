@@ -1,0 +1,48 @@
+.logo-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+ion-thumbnail {
+      --size: 150px;
+      --border-radius: 50%;
+      margin: auto;
+      position: relative;
+    ion-icon {
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      color: var(--ion-color-light-tint);
+      font-size: 24px;
+    }
+  }  
+
+  .avatarOverlay {
+    border-radius: 50%;
+    size: 150%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  #avatarFileInput {
+    position: absolute;
+    opacity: 0;
+  }
